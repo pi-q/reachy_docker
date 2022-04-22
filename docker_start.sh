@@ -81,6 +81,8 @@ if ! docker container ps | grep -q ${CONTAINER_NAME}; then
 	$DOCKER_GPU_ARGS \
 	$DOCKER_SSH_AUTH_ARGS \
 	-v "$DIR/..:/home/${USER}" \
+	-e HIST_FILE=/root/.bash_history \
+    -v=$HOME/.bash_history:/root/.bash_history \
 	$ADDITIONAL_FLAGS --user root \
 	--name ${CONTAINER_NAME} --workdir /home/$USER \
 	--cap-add=SYS_PTRACE \
