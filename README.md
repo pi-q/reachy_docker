@@ -5,8 +5,7 @@ The image is hosted on Docker Hub (https://hub.docker.com/repository/docker/mari
 
 Usage: 
 - Pull the image from Docker Hub:
-`` cd <location where this repository was pulled>/reachy_docker``
-`` make pull``
+`` cd <location where this repository was pulled>/reachy_docker && make pull``
 
 - Build the image:
 ``make build``
