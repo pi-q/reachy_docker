@@ -21,7 +21,7 @@ RUN apt update && apt -q -y install liblttng-ust-dev lttng-tools && rm -rf /var/
 RUN apt update && apt -q -y install bash-completion terminator gedit && rm -rf /var/lib/apt/lists/*
 
 # install custom ros packages
-RUN apt update && apt -q -y install ros-foxy-ros2-control ros-foxy-xacro ros-foxy-ros2-controllers ros-foxy-gazebo-ros ros-foxy-gazebo-ros2-control ros-foxy-gazebo-ros2-control-demos ros-foxy-joint-state-publisher-gui ros-foxy-joint-state-publisher && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt -q -y install ros-foxy-ros2-control ros-foxy-xacro ros-foxy-ros2-controllers ros-foxy-gazebo-ros ros-foxy-gazebo-ros2-control ros-foxy-gazebo-ros2-control-demos ros-foxy-joint-state-publisher-gui ros-foxy-joint-state-publisher ros-foxy-rclpy && rm -rf /var/lib/apt/lists/*
 
 #install reachy dependencies
 RUN apt update && apt -q -y install python3-pykdl && rm -rf /var/lib/apt/lists/*
